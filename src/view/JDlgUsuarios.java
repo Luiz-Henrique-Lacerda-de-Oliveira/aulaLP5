@@ -12,7 +12,7 @@ import tools.Util;
  * @author u10916731103
  */
 public class JDlgUsuarios extends javax.swing.JDialog {
-    
+
     public JDlgUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -21,7 +21,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
         Util.habilitar(false, jCboNivel, jChbAtivo, jTxtNome, jFmtCpf,
                 jFmtDataDeNascimento, jPwfSenha, jTxtCodigo, jTxtApelido,
                 jBtnConfirmar, jBtnCancelar);
-        
+
     }
 
     /**
@@ -253,9 +253,11 @@ public class JDlgUsuarios extends javax.swing.JDialog {
         Util.habilitar(true, jCboNivel, jChbAtivo, jTxtNome, jFmtCpf,
                 jFmtDataDeNascimento, jPwfSenha, jTxtCodigo, jTxtApelido,
                 jBtnConfirmar, jBtnCancelar);
-        Util.habilitar( false, jBtnAlterar, jBtnIncluir, jBtnExcluir,
+        Util.habilitar(false, jBtnAlterar, jBtnIncluir, jBtnExcluir,
                 jBtnPesquisar);
-        Util.limpar(jTxtNome, jTxtApelido, jTxtCodigo);
+        Util.limpar(jTxtNome, jTxtApelido, jTxtCodigo,
+                jCboNivel, jChbAtivo, jFmtDataDeNascimento,
+                jPwfSenha, jFmtCpf);
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
@@ -286,7 +288,7 @@ public class JDlgUsuarios extends javax.swing.JDialog {
         Util.habilitar(false, jCboNivel, jChbAtivo, jTxtNome, jFmtCpf,
                 jFmtDataDeNascimento, jPwfSenha, jTxtCodigo, jTxtApelido,
                 jBtnConfirmar, jBtnCancelar);
-        Util.habilitar( true, jBtnAlterar, jBtnIncluir, jBtnExcluir,
+        Util.habilitar(true, jBtnAlterar, jBtnIncluir, jBtnExcluir,
                 jBtnPesquisar);
 
     }//GEN-LAST:event_jBtnCancelarActionPerformed
